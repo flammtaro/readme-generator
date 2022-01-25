@@ -71,12 +71,12 @@ const generateReadme = ({title, description, installation, usage, contributing, 
 ${description}
 
 ## Table of Contents
--[Description](#Description)
--[Installation](#Installation)
--[Usage](#Usage)
--[Contributions](#Contributions)
--[License](#License)
--[Questions](#Questions)
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributions](#Contributions)
+- [License](#License)
+- [Questions](#Questions)
 
 ## Installation
 ${installation}
@@ -91,8 +91,8 @@ ${license}
 ${contributing}
 
 ## Questions
--Github: [${username}](${githuburl})
--E-mail: ${email}
+- Github: [${username}](${githuburl})
+- E-mail: ${email}
 `;
 
 
