@@ -99,7 +99,7 @@ ${contributing}
 // TODO: Create a function to initialize app
 const init = () => {
     questions()
-    .then((answers) => fs.writeFileSync('README.md', generateReadme(answers)))
+    .then((answers) => fs.writeFileSync('GeneratedReadME.md', generateReadme(answers)))
     .then(() => console.log("Successfully created ReadMe"))
     .catch((err) => console.error(err));
 }

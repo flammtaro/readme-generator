@@ -1,28 +1,28 @@
-# ReadMe Generator
+# code-generator
 
 ## Description
-This is a js file that is used to simplify ReadMe generation for projects
+- The goal of this project was to create a readme generator that will automatically create a readme file based upon user inputs, and structure it in the correct format
 
-## Table of Contents
-- [Description](#Description)
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Contributions](#Contributions)
-- [License](#License)
-- [Questions](#Questions)
+- I built this project in order to better understand how to use the node package to use terminal inputs to populate a document
+
+- What I learned on this project is how to incorporate input variables into write systems using the node package
 
 ## Installation
-To install this project, clone the SSH key from the github directory to your local drive, and open the cloned repo on your desktop VS Code software
+To install this project, you need to:
+-Download the code from the projects GitHub: https://github.com/flammtaro/readme-generator
+-Open the code in Visual Studio Code
 
 ## Usage
-To use this application, open the code in your VS Code software, and in your terminal, run node index.js
+This code contains the js script and an example generated ReadMe using the js code. A video of the current version of the website can be seen here: !![readme generator video](https://i.imgur.com/mMe1sVr.png). 
+
+## Credits
+This project was created by Reid Somers Flamm. 
+
+His GitHub can be found at: https://github.com/flammtaro
+The skills used to complete this project were learned from the UW Bootcamp. 
 
 ## License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+BSD 2-Clause License
 
-## Contributions
-Reid Somers Flamm
-
-## Questions
-- Github: [flammtaro](https://github.com/flammtaro)
-- E-mail: reidsomersflamm@gmail.com
+Copyright (c) 2021, flammtaro
+All rights reserved.
