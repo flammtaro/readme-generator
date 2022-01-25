@@ -13,7 +13,7 @@ To install this project, you need to:
 -Open the code in Visual Studio Code
 
 ## Usage
-This code contains the js script and an example generated ReadMe using the js code. A video of the current version of the website can be seen here: !![readme generator video](https://youtu.be/rECHCzXH6OM). 
+This code contains the js script and an example generated ReadMe using the js code. A video of the current version of the website can be seen here: ![ReadMe Generator](https://youtu.be/rECHCzXH6OM). 
 
 ## Credits
 This project was created by Reid Somers Flamm. 
