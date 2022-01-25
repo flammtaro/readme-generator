@@ -34,23 +34,26 @@ const questions = () =>{
             type: 'list',
             message: 'What license are you using for this project?',
             name: 'license',
-            choices: ['MIT', 'Apache', 'GLPv2', 'BSD 3-clause'],
+            choices: ['MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)', 
+            'Apache 2.0 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
+             'CC0 [![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/',
+              'BSD 3-Clause [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)'],
         },
         {
             type: 'input',
-            message: "What is your GitHub username?",
+            message: 'What is your GitHub username?',
             name: 'username',
+        },
+        {
+            type: 'input',
+            message: 'What is your GitHub profile URL?',
+            name: 'githuburl',
         },
         {
             type: 'input',
             message: 'What is your e-mail address?',
             name: 'email',
         }
-        .then(answers =>
-            {
-                // write
-            })
-
 
     ]);
 }
@@ -60,15 +63,44 @@ const questions = () =>{
 //     fs.writeFile()
 
 // }
-const generateReadme = ({}) =>
-''
-;
+//This a function to generate the ReadMe based upon the user inputs above
+const generateReadme = ({title, description, installation, usage, contributing, license, username, githuburl, email}) =>
+`# ${title}
+
+## Description
+${description}
+
+## Table of Contents
+-[Description](#Description)
+-[Installation](#Installation)
+-[Usage](#Usage)
+-[Contributions](#Contributions)
+-[License](#License)
+-[Questions](#Questions)
+
+## Installation
+${installation}
+
+## Usage
+${usage}
+
+## License
+${license}
+
+## Contributions
+${contributing}
+
+## Questions
+-Github: [${username}](${githuburl})
+-E-mail: ${email}
+`;
+
 
 // TODO: Create a function to initialize app
-function init() {
+const init = () => {
     questions()
-    .then((answers) => fs.writeFile('README.md', generateReadme(answers)))
-    .then(() => console.log("Successfully created ReadME"))
+    .then((answers) => fs.writeFileSync('README.md', generateReadme(answers)))
+    .then(() => console.log("Successfully created ReadMe"))
     .catch((err) => console.error(err));
 }
 
